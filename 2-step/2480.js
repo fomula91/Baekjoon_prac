@@ -11,7 +11,11 @@ rl.on("line", (line) => {
     const c = input[2];
     let result;
     
-    if(a == b && a != c){
+    if(a == b && a == c){
+        result = 10000 + (a * 1000);
+        console.log(result);
+    }
+    else if(a == b && a != c){
         result = 1000 + (a * 100);
         console.log(result);
     }
@@ -46,10 +50,7 @@ rl.on("line", (line) => {
         }
         
     }
-    else{
-        result = 10000 + (a * 1000);
-        console.log(result);
-    }
+    
     
     rl.close()
 }).on("close", () => {
