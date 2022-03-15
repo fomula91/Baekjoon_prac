@@ -1,4 +1,8 @@
 class MyCircualQueue:
+    #파이썬에서 is와 ==의 차이
+    #값이 같은지 확인하려면 == 을 사용하시면 되고,
+    #참조가 같은지를 확인하려면 is를 사용하시면 됩니다.
+
     #MyCircualQueue 시작시 초기화 부분
     def __init__(self, k: int):
         #queue선언 -> 큐의 길이를 외부 입력값 k만큼 빈 배열을 생성한다
