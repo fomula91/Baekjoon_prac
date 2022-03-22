@@ -36,7 +36,7 @@ class LinkList:
         pass
     def append(self, val):
         if not self.head:
-            self.head = ListNode(val, None)
+            self.head = ListNode(val, None) 
             return
         node = self.head
         while node.next:
