@@ -1,5 +1,4 @@
 from collections import deque
-import copy
 num = [1, 1, 1, 1, 1]
 target = 3
 
