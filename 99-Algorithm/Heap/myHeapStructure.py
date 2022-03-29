@@ -31,4 +31,6 @@ class Heap:
             biggest = left
         if right <= len(self.item) and self.item[right] > self.item[biggest]:
             biggest = right
-            self.sortDown()
+        if biggest != index:
+            self.item[biggest], self.item[index] = self.item[index], self.item[biggest]
+            self.sortDown(biggest)
