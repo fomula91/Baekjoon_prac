@@ -21,8 +21,8 @@ asert binary_serch(nums=[-1,0,3,5,9,12], target=2) == -1
 from bisect import bisect_left, bisect_right
 
 
-nums = [4,3,9,3,1,9,7,6,9,7]
-nums2 = [5,0,8]
+nums = [4,9,5]
+nums2 = [9,4,9,8,4]
 
 class Solution:
     def intersection(self, num1, num2):
@@ -44,11 +44,17 @@ class Solution:
             return 
         answer = list(result)
         return answer
-        
+
+    def intersection2(self, nums1, nums2):
+        set1 = set(nums1)
+        print(set1)
+        set2 = set(nums2)
+        print(set2)
+        return list(set2 & set1)
 
         
 
 s= Solution()
-print(s.intersection(nums,nums2))
+print(s.intersection2(nums,nums2))
 
 

@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, value, prev, next):
+    def __init__(self, value, next, prev):
         self.value = value
         self.prev = prev
         self.next = next
@@ -192,8 +192,8 @@ lst.push(3)
 lst.push(4)
 #lst.remove(2)
 lst.get(0)
-#print(lst.head)
-#print(lst.head.next)
+# print(lst.head.value)
+# print(lst.head.next)
 
     # def append(self, value):
     #     if not self.head:
